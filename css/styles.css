@@ -49,8 +49,8 @@ body {
 #brand {
  color: #035099;
  font-weight: lighter;
- padding: 16px;
  font-size: 1.5em;
+ line-height: 1;
 }
 
 #brand span {
@@ -61,6 +61,9 @@ color: #030599;
 */
 }
 
+i.fa.fa-bars {
+  font-size: 1.5em;
+}
 .nav-link {
   padding-right: 8px;
  }
@@ -93,7 +96,7 @@ color: #030599;
   /* Style the top navigation bar */
 
  section {
-   margin-bottom: 100px;
+   margin-bottom: 30px;
   }
 
 #content, #mission, #about, #hero, #team, #contact, #form-container {
@@ -107,14 +110,17 @@ color: #030599;
  flex-direction: column;
 }
 
-#mission h3 {
- text-align: center;
+.subhead {
+  text-align: center;
+  margin: auto;
 }
+
 .info {
  padding: 0px 10px;
  max-width: 80ch;
  margin: 20px auto;
 }
+
  #hero {
    height: 100vh;
    /* add the to background image selector for linear gradient layer over background image
@@ -139,6 +145,7 @@ color: #030599;
    font-size: 2em;
    margin-top: 0;
    margin-bottom: 0.5em;
+   font-size: 2em;
   }
 
   #hero a {
@@ -188,7 +195,8 @@ color: #030599;
 
 .feature-image h1 {
  padding: 10%;
- color: #ffffff;;
+ color: #ffffff;
+ font-size: 2.5em;
 }
 
 section h1, .left {
@@ -200,8 +208,9 @@ section h1, .left {
 }
 .team-card {
  padding: 20px 0px;
- border: 1px solid lightgray;
+ box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2);
  margin: 0.5em;
+
 }
 
 .team-image {
@@ -245,8 +254,8 @@ margin-left: 15px;
 fieldset {
   margin: auto;
   background-color: #d8ebfe;
-  border-radius: 30px;
-  max-width: 80%;
+  border-radius: 20px;
+  width: 80%;
 }
 
 fieldset p span, #form-footer p, #main-footer p {
@@ -335,11 +344,21 @@ flex-basis: 100vw;
  margin: 0.5em;
 }
 
-
 @media only screen and (min-width: 600px) {
  #mission .info, #about .info, #services .info, .team-card, .news-column .info, #contact .info {
- width: 70%;
+ width: 90%;
  padding: 0px 20px;
+ margin: 0 auto;
+}
+}
+@media only screen and (min-width: 600px) {
+ #mission .info, #about .info, #services .info, .team-card, .news-column .info, #contact .info {
+ width: 80%;
+ padding: 0px 20px;
+}
+
+.feature-image h1 {
+ font-size: 3em;
 }
 fieldset p span, #form-footer p, #main-footer p {
   font-size: .8em;
@@ -368,16 +387,23 @@ fieldset p span, #form-footer p, #main-footer p {
 }
 }
 @media only screen and (min-width: 768px) {
+  #site-header {
+    margin: auto;
+  }
  .navbar {
   display: flex;
   flex-direction: row;
-  padding: 16px;
+  padding: 5px;
    justify-content: space-between;
  }
 
+ #brand {
+   padding: 0;
+ }
  #topnav {
   flex-direction: row;
   justify-content: flex-end;
+  padding: 0;
  }
 
  .nav-link a {
@@ -391,6 +417,9 @@ fieldset p span, #form-footer p, #main-footer p {
   display: none;
  }
 
+ #hero h1 {
+   font-size: 3em;
+ }
  #cards, #news-content {
   display: flex;
   justify-content: space-evenly;
@@ -412,8 +441,8 @@ max-height: 200px;
 overflow: scroll;
 }
 
-#mission .info, #about .info, #services .info, .news-column .info, #contact .info {
+#mission .info, #about .info, #services .info, .news-column .info, #contact .info, fieldset {
  width: 70%;
- margin: 100px auto;
+ margin: 0px auto 60px;
 }
 }
