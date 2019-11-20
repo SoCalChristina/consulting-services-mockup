@@ -49,6 +49,8 @@ body {
 #brand {
  color: #035099;
  font-weight: lighter;
+ padding: 16px;
+ font-size: 1.5em;
 }
 
 #brand span {
@@ -111,7 +113,7 @@ color: #030599;
 .info {
  padding: 0px 10px;
  max-width: 80ch;
- margin: auto;
+ margin: 20px auto;
 }
  #hero {
    height: 100vh;
@@ -174,21 +176,21 @@ color: #030599;
 }
 
 .feature-image {
- background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-   max-height: 300px;
-
-    z-index: 0;
-    position: relative;
-    width: 100%;
-
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 300px;
+  z-index: 0;
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
 }
 
 .feature-image h1 {
  padding: 10%;
  color: #ffffff;;
 }
+
 section h1, .left {
  text-align: center;
 }
@@ -374,7 +376,6 @@ fieldset p span, #form-footer p, #main-footer p {
  }
 
  #topnav {
-  font-size: 80%;
   flex-direction: row;
   justify-content: flex-end;
  }
@@ -410,8 +411,9 @@ width: 30vw;
 max-height: 200px;
 overflow: scroll;
 }
-#mission .info, #about .info, #services .info {
+
+#mission .info, #about .info, #services .info, .news-column .info, #contact .info {
  width: 70%;
- margin: auto;
+ margin: 100px auto;
 }
 }
