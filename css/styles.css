@@ -78,7 +78,6 @@ i.fa.fa-bars {
 
 /* Change color on hover */
 .nav-items a:hover {
-   background-color: blue;
    color: #994c03;
 }
 
