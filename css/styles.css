@@ -1,186 +1,152 @@
-  * {
-   box-sizing: border-box;
-  }
-
-body {
-   font-family: 'Raleway', sans-serif;
-   font-size: 1em;
-   width: 100vw;;
-   height: 100%;
-   color: rgb(54, 59, 65);
-   margin: 0;
-   line-height: 1.5;
-  }
-
-  a {
-   text-decoration: none;
-   color: #ffffff;
-  }
-::-webkit-scrollbar {
-  width: 10px;
+* {
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  width: 100vw;;
+  height: 100%;
+  color: rgb(54, 59, 65);
+  margin: 0;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
 /* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #035099;
+  background: #4b4e51;
   border-radius: 10px;
 }
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #023667;
 }
 #site-header {
- width: 100vw;
- }
-
+  width: 100vw;
+}
 .navbar, .nav-items {
   display: flex;
   padding: 16px;
   flex-direction: column;
 }
-
 #brand {
- color: #035099;
- font-weight: lighter;
- font-size: 1.5em;
- line-height: 1;
+  color: #035099;
+  font-weight: lighter;
+  font-size: 1.5em;
+  line-height: 1;
 }
-
 #brand span {
- font-family: 'Abril Fatface', cursive;
- color: #994c03;
+  font-family: 'Abril Fatface', cursive;
+  color: #994c03;
 /* alt color
 color: #030599;
 */
 }
-
 i.fa.fa-bars {
   font-size: 1.5em;
 }
 .nav-link {
   padding-right: 8px;
- }
-
- .nav-items {
+}
+.nav-items {
   display: none;
- }
-
- .nav-items a {
+}
+.nav-items a {
   color: rgb(54, 59, 65);
- }
-
+}
 /* Change color on hover */
 .nav-items a:hover {
-   color: #994c03;
+  color: #994c03;
 }
-
- .nav-ToggleShow {
+.nav-ToggleShow {
   display: flex;
- }
-
- .nav-toggle {
+}
+.nav-toggle {
   align-self: flex-end;
   display: initial;
   position: absolute;
   cursor: pointer;
- }
-
-  /* Style the top navigation bar */
-
- section {
-   margin-bottom: 30px;
-  }
-
+}
+section {
+  margin-bottom: 30px;
+}
 #content, #mission, #about, #hero, #team, #contact, #form-container {
- width: 100vw;
+  width: 100vw;
 }
-
-
-  /* Style the content */
- #content {
- display: flex;
- flex-direction: column;
+/* Style the content */
+#content {
+  display: flex;
+  flex-direction: column;
 }
-
 .subhead {
   text-align: center;
   margin: auto;
 }
-
 .info {
- padding: 0px 10px;
- max-width: 80ch;
- margin: 20px auto;
+  padding: 0px 10px;
+  max-width: 80ch;
+  margin: 20px auto;
 }
-
- #hero {
-   height: 100vh;
-   /* add the to background image selector for linear gradient layer over background image
-   linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), */
-   background-image: url("../images/nasa-earth-image.jpg");
-   background-position: center center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   /* use to fix backgound image allowing text to scroll over the image */
-   /*
-   background-attachment: fixed;
-   */
-    display: flex;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   color: #ffffff;
-
-  }
-
-  #hero h1 {
-   font-size: 2em;
-   margin-top: 0;
-   margin-bottom: 0.5em;
-   font-size: 2em;
-  }
-
-  #hero a {
-   color: #ffffff;
-  }
-
-  #hero-btn, .btn {
-    /* Positioning and sizing */
-    display: block;
-    width: 150px;
-
-    /* Padding and margins */
-    padding: 0.5em;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-
-    /* Text styles */
-    color: white;
-    font-size: 1em;
-
-    /* Border styles */
-    border: 3px solid white;
-    border-radius: 20px;
-
-    /* Background styles */
-    /* add transparent color
-    background-color: rgba(147, 112, 219, 0.8);
-    */
-    background-color: #03994c;
+#hero {
+  height: 100vh;
+/* add the to background image selector for linear gradient layer over background image
+linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), */
+  background-image: url("../images/nasa-earth-image.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+/* use to fix backgound image allowing text to scroll over the image */
+/* background-attachment: fixed; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
 }
-
+#hero h1 {
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+#hero a {
+  color: #ffffff;
+}
+#hero-btn, .btn {
+/* Positioning and sizing */
+  display: block;
+  width: 150px;
+/* Padding and margins */
+  padding: 0.5em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+/* Text styles */
+  color: white;
+  font-size: 1em;
+/* Border styles */
+  border: 3px solid white;
+  border-radius: 20px;
+/* Background styles */
+/* add transparent color
+  background-color: rgba(147, 112, 219, 0.8);
+*/
+  background-color: #03994c;
+}
 #about-header {
- background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5)), url("../images/office-courtyard.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5)), url("../images/office-courtyard.jpg");
 }
-
 .feature-image {
   background-position: center;
   background-repeat: no-repeat;
@@ -190,87 +156,75 @@ i.fa.fa-bars {
   position: relative;
   width: 100%;
   margin-bottom: 40px;
+  background-attachment: fixed;
 }
-
 .feature-image h1 {
- padding: 10%;
- color: #ffffff;
- font-size: 2.5em;
+  padding: 10%;
+  color: #ffffff;
+  font-size: 2.5em;
 }
-
 section h1, .left {
- text-align: center;
+  text-align: center;
 }
-
 #services-header {
- background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5)), url("../images/capitol-image.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5)), url("../images/capitol-image.jpg");
 }
 .team-card {
- padding: 20px 0px;
- box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2);
- margin: 0.5em;
-
+  padding: 20px 0px;
+  box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0.5em;
 }
-
 .team-image {
- text-align: center;
- margin: 0.5em;
- padding: 20px 0px;
+  text-align: center;
+  margin: 0.5em;
+  padding: 20px 0px;
 }
 .team-image img {
- border-radius: 50%;
- width: 50%;
- max-width: 150px;
+  border-radius: 50%;
+  width: 50%;
+  max-width: 150px;
 }
 .team-content {
- padding: 0.5em;
+  padding: 0.5em;
 }
- #team h3 {
+#team h3 {
   margin: 0;
- }
+}
  #team h4 {
   margin-top: 0;
- }
+}
 #team i {
  margin: 0;
 }
-
 #team a {
-color: rgb(54, 59, 65);
-margin-left: 15px;
-
+  color: rgb(54, 59, 65);
+  margin-left: 15px;
 }
-
 #news-header {
- background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5)), url("../images/demonstration.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5)), url("../images/demonstration.jpg");
 }
-
 #form-header {
- margin: 0;
- text-align: center;
+  margin: 0;
+  text-align: center;
 }
-
 fieldset {
   margin: auto;
   background-color: #d8ebfe;
   border-radius: 20px;
   width: 80%;
 }
-
 fieldset p span, #form-footer p, #main-footer p {
- font-size: .6em;
+  font-size: .6em;
 }
-
 #form-footer {
- margin: 0px 20px;
- text-align: center;
+  margin: 0px 20px;
+  text-align: center;
 }
 .default-fields, #idea {
   display: block;
   margin-bottom: 1em;
   text-align: left;
 }
-
 .contacts {
   font-size: 1.5;
   font-weight: 300;
@@ -280,34 +234,30 @@ fieldset p span, #form-footer p, #main-footer p {
   line-height: 1.15;
   width: 100%;
 }
-
 #contact-header {
  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5)), url("../images/freeway.jpg");
 }
 .contact-input {
   height: 2.5em;
 }
-
 .contact-input, #idea {
   display: block;
   width: 100%;
   box-sizing: border-box;
-padding: 0.2em 0.8em;
+  padding: 0.2em 0.8em;
   overflow: visible;
   margin: 0.2em 0 0.5em;
   color: lightgray;
   font-size: 1em;
 }
 .privacy-terms-link {
- color: #035099;
+  color: #035099;
 }
-
 .submit {
- text-align: center;
- padding: 0.5em;
- margin: 30px auto;
- border: 1px solid #000000;
-
+  text-align: center;
+  padding: 0.5em;
+  margin: 30px auto;
+  border: 1px solid #000000;
 }
 .labels {
   height: 2.5rem;
@@ -315,133 +265,123 @@ padding: 0.2em 0.8em;
 .label-selects {
   margin: .8em auto 0.2em;
 }
-
 /* Style the footer */
 #main-footer {
- display: flex;
- flex-direction: column;
- background-color:#005a95;
- color: #ffffff;
- justify-content: center;
- padding: 20px;
-
+  display: flex;
+  flex-direction: column;
+  background-color:#005a95;
+  color: #ffffff;
+  justify-content: center;
+  padding: 20px;
 }
- #main-footer a {
-flex-basis: 100vw;
- width: 100%;
- margin: auto;
- padding: 0.5em;
- font-size: 70%;
+#main-footer a {
+  flex-basis: 100vw;
+  width: 100%;
+  margin: auto;
+  padding: 0.5em;
+  font-size: 70%;
 }
-
 #social-menu {
- text-align: center;
- font-size: 1.5em;
+  text-align: center;
+  font-size: 1.5em;
 }
-
 #social-menu i {
- margin: 0.5em;
+  margin: 0.5em;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 400px) {
+  #mission .info, #about .info, #services .info, .team-card, .news-column .info, #contact .info {
+   width: 90%;
+   padding: 0px 20px;
+   margin: 0 auto;
+  }
 }
 
 @media only screen and (min-width: 600px) {
- #mission .info, #about .info, #services .info, .team-card, .news-column .info, #contact .info {
- width: 90%;
- padding: 0px 20px;
- margin: 0 auto;
-}
-}
-@media only screen and (min-width: 600px) {
- #mission .info, #about .info, #services .info, .team-card, .news-column .info, #contact .info {
- width: 80%;
- padding: 0px 20px;
+  #mission .info, #about .info, #services .info, .team-card, .news-column .info, #contact .info {
+    width: 80%;
+   padding: 0px 20px;
+  }
+  .feature-image h1 {
+   font-size: 3em;
+  }
+  fieldset p span, #form-footer p, #main-footer p {
+    font-size: .8em;
+  }
+  .news-column .info {
+    height: 300px;
+    overflow: scroll;
+    margin-bottom: 40px;
+  }
+  .team-card {
+    margin-bottom: 30px;
+  }
+  .cards {
+    padding: 20px;
+  }
+  #comments {
+    text-align: center;
+  }
+  .default-fields, #idea {
+    width: 70%;
+    margin: auto;
+  }
+  .contact-input {
+    height: 40px;
+  }
 }
 
-.feature-image h1 {
- font-size: 3em;
-}
-fieldset p span, #form-footer p, #main-footer p {
-  font-size: .8em;
-}
-.news-column .info {
- height: 300px;
- overflow: scroll;
- margin-bottom: 40px;
-}
-.team-card {
- margin-bottom: 30px;
-}
-.cards {
- padding: 20px;
-}
-
-#comments {
- text-align: center;
-}
-.default-fields, #idea {
- width: 70%;
- margin: auto;
-}
-.contact-input {
- height: 40px;
-}
-}
 @media only screen and (min-width: 768px) {
   #site-header {
     margin: auto;
   }
- .navbar {
-  display: flex;
-  flex-direction: row;
-  padding: 5px;
-   justify-content: space-between;
- }
-
- #brand {
-   padding: 0;
- }
- #topnav {
-  flex-direction: row;
-  justify-content: flex-end;
-  padding: 0;
- }
-
- .nav-link a {
-  margin: 10px;
- }
- .nav-items {
-  display: flex;
-
- }
- .nav-toggle {
-  display: none;
- }
-
- #hero h1 {
-   font-size: 3em;
- }
- #cards, #news-content {
-  display: flex;
-  justify-content: space-evenly;
- }
-
- .team-card {
-  max-width: 30vw;
- }
-.team-content a {
- font-size: 80%;
-}
-
-.team-image img {
- width: 70%;
-}
-#news-content .info {
-width: 30vw;
-max-height: 200px;
-overflow: scroll;
-}
-
-#mission .info, #about .info, #services .info, .news-column .info, #contact .info, fieldset {
- width: 70%;
- margin: 0px auto 60px;
-}
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    justify-content: space-between;
+  }
+  #brand {
+    padding: 0;
+  }
+  #topnav {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  .nav-link a {
+    margin: 10px;
+  }
+  .nav-items {
+    display: flex;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  #hero h1 {
+    font-size: 3em;
+  }
+  #cards, #news-content {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .team-card {
+    max-width: 30vw;
+  }
+  .team-content a {
+    font-size: 80%;
+  }
+  .team-image img {
+    width: 70%;
+  }
+  #news-content .info {
+    width: 30vw;
+    max-height: 200px;
+    overflow: scroll;
+  }
+  #mission .info, #about .info, #services .info, .news-column .info, #contact .info, fieldset {
+    width: 70%;
+    margin: 0px auto 60px;
+  }
 }
